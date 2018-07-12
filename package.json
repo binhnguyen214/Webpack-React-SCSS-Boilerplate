@@ -1,0 +1,42 @@
+{
+  "name": "Juno-Webpack-Boilerplate",
+  "version": "0.6.0",
+  "description": "Just enough to get started",
+  "author": "Juno",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/junomedia/boilerplate"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --progress --hide-modules --watch",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production webpack --no-progress --hide-modules --config webpack.production.config.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "extract-loader": "^2.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^4.0.3",
+    "postcss-cli": "^5.0.1",
+    "postcss-loader": "^2.1.6",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "axios": "^0.18.0"
+  }
+}
